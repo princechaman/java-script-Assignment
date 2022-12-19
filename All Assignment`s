@@ -1,0 +1,13 @@
+class Human {
+     constructor(name, age ,fathername) {
+    this.name = name;
+    this.age = age;
+    this.fathername = fathername;
+  }
+     FullName() {
+    
+    return  this.name+" s/o " + this.fathername;
+  }
+}
+let myHuman = new Human("pappu",19, "Jangle Singh");
+console.log(myHuman.FullName());
