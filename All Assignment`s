@@ -1,3 +1,4 @@
+CLASS ->
 class Human {
      constructor(name, age ,fathername) {
     this.name = name;
