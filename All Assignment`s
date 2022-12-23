@@ -36,3 +36,49 @@ Total : <span id="sum"></span>
 </body>
 </html>
 
+====================================================================
+JAVA SCRIPT in Calculater ->
+
+<html>
+    <head>
+        <script>
+            function Add(){
+                var First = document.getElementById("num1").value;
+                var Last = document.getElementById("num2").value;
+                var sum = parseInt(First) + parseInt(Last);
+                document.getElementById("calculeter").innerHTML = sum;
+            }
+            function Sub(){
+                var First = document.getElementById("num1").value;
+                var Last = document.getElementById("num2").value;
+                var sub = parseInt(First) - parseInt(Last);
+                document.getElementById("calculeter").innerHTML = sub;
+            }
+            function Mul(){
+                var First = document.getElementById("num1").value;
+                var Last = document.getElementById("num2").value;
+                var mul = parseInt(First) * parseInt(Last);
+                document.getElementById("calculeter").innerHTML = mul;
+            }
+            function Div(){
+                var First = document.getElementById("num1").value;
+                var Last = document.getElementById("num2").value;
+                var div = parseInt(First) / parseInt(Last);
+                document.getElementById("calculeter").innerHTML = div;
+            }
+            
+        </script>
+    </head>
+<body>
+
+FirstNumber: <input type="text" id="num1" /><br/><br/>
+SecondNumber: <input type="text" id="num2" /><br/><br />
+<button onclick="Add();">+</button>
+<button onclick="Sub();">-</button>
+<button onclick="Mul();">*</button>
+<button onclick="Div();">/</button><br/><br/>
+ Total Answer : <span id="calculeter"></span><br/>
+
+</body>
+</html>
+=======================================================================================================================
