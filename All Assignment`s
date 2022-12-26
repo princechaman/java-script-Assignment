@@ -82,3 +82,32 @@ SecondNumber: <input type="text" id="num2" /><br/><br />
 </body>
 </html>
 =======================================================================================================================
+
+added city
+
+
+<html>
+    <head>
+        <script>        
+            function add(){
+
+         var city = document.getElementById('city').value;
+var cityArray = [];
+cityArray.push(city);
+var htmlContect = '<ul type="disc">';
+for(var citys of cityArray){
+    htmlContect += '<li>'+citys+'</li>';
+}
+htmlContect += '</ul>';
+
+document.getElementById("list").innerHTML+=htmlContect;
+            }
+        </script>
+    </head>
+    <body>
+         City <br /><input type="text" id="city"><br /><br />
+        <button onclick="add();">Add</button>
+                <span id="list"></span>
+    </body>
+</html>
+===============================================================================
